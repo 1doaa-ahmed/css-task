@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.shape1 , .shape2 , .shape3 {
+    display: inline-block;
+    outline: 5px solid black;
+    padding: 25px;
+    margin: 10px;
+}
+.shape1 {
+    border: red 5px solid;
+}
+.shape2 {
+    border-color: blue green;
+    border-style: solid;
+    border-width: 5px;
+}
+.shape3 {
+    border-color: red yellow blue green;
+    border-style: dashed ;
+    border-width: 5px;
+    outline: 5px solid;
+}
+.shape4 , .shape5 , .shape6 {
+    width: 400px;
+    background-color: rgb(222, 222, 222);
+    padding: 20px;
+    margin: 20px;
+}
+.shape4 {
+    border-left: 8px  #e91e63 solid;
+    outline: 10px solid rgb(222, 222, 222);
+}
+.shape5 {
+    visibility: hidden;
+}
+.shape6 {
+    border-left: 8px  #009688 solid;
+    outline: 10px solid rgb(222, 222, 222);
+}

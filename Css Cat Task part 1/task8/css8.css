@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div {
+    height: 100px;
+    width: 100px;
+}
+.black {
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+    top: 30px;
+    left: 20px;
+}
+.blue {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    background-color: blue;
+}
+.green {
+    background-color: green;
+    position: absolute;
+    z-index: 3;
+    top: 30px;
+    left: 30px;
+}
+.red {
+    position: absolute;
+    z-index: 4;
+    background-color: red;
+    top: 40px;
+    left: 40px;
+}
+#task2 {
+    height: 150px;
+    width: 400px;
+    background-color: #eee;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    line-height: 28px;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+    border-left: 3px  solid rgb(89, 180, 250);
+    border-right: 3px solid rgb(89, 180, 250);
+    font-size: 18px;
+}
+.top-left , .bottom-left , .top-right , .bottom-right {
+    background-color: rgb(89, 180, 250);
+    height: 25px;
+    width: 35px;
+    position: absolute;
+    color: white; 
+}
+.top-right , .bottom-right {
+    border-left: 2px solid red;
+}
+.top-left , .bottom-left{
+    left: 530px;  
+    border-right: 2px solid red;
+}
+.top-left , .top-right{
+    top: 210px;
+}
+.bottom-left ,.bottom-right {
+    top: 390px;
+}
+
+.list { 
+    width: 400px ;
+    margin: auto;
+}
+
+li { 
+    background-color: #eee;
+    margin-bottom: 10px;
+    padding: 6px;
+    margin-top: 5px;
+}
+li li {
+    background-color: white;
+}
+li ul {
+    list-style-position: inside;
+}
+.list2 {
+    margin-left:27px ; 
+}
+table {
+    margin: auto;
+    width: 700px;
+    text-align: center;
+}
+thead {
+    background-color: black;
+    color: white;
+}
+tbody {
+    background-color: #eee;
+}
+.view {
+    background-color: rgb(36 139 229);
+}
+.delete {
+    background-color: #fa5252;
+}
+button {
+    border: none;
+    color: white;
+    width: 50px;
+    height: 20px;
+}
+button:hover {
+    cursor: pointer;
+}
+td {
+    padding: 10px;
+}

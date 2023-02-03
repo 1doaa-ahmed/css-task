@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.class {
+    background-color:rgb(247, 148, 181) ;
+    padding: 20px;
+    margin: 5px;
+    width: 800px;
+}
+.class div {
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    background-color:rgb(255, 208, 216);
+    text-align: center;
+    font-size: 20px;
+    margin: 5px;
+}
+.second div {
+    width: calc((100% - 30px) /3);
+    float: left; 
+}
+.clear {
+    clear: both;
+}
+.third div {
+    width: calc((100% - 20px) /2);
+    float: left; 
+}
+.fourth div {
+    width: calc((100% - 40px) /4);
+    float: left; 
+}
+.normal , .one , .two {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: rgb(247, 148, 181);
+    color: black;
+}
+.two {
+    opacity: 0.1;
+}
+.one {
+    background-color: rgba(247, 148, 181, 0.1);
+}

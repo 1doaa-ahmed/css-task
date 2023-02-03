@@ -1,0 +1,36 @@
+h1 { 
+    text-shadow:1px 1px #f44336 ,2px 2px #42a5f5 ,3px 3px #9c27b0;
+    text-align: center;
+}
+.one , .two ,.three {
+    text-align: center;
+}
+.one {
+    text-transform: uppercase;
+}
+.two {
+    text-transform: capitalize;
+}
+.three {
+    text-transform: lowercase;
+}
+.first , .second , .third {
+    padding: 15px;
+    width: 400px;
+    background-color: rgb(235, 234, 234);
+    margin: 10px auto;
+}
+.third {
+    white-space :nowrap ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+a{
+    background-color: #009688;
+    color: white;
+    border-bottom: #02645a 5px solid;
+    padding: 15px;
+    display: block;
+    width:fit-content ;
+    margin: auto;
+}
