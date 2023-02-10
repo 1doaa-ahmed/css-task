@@ -1,0 +1,244 @@
+/**task 1 */
+.task1 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 40px auto ;
+    gap: 20px 20px;
+    position: relative;
+}
+.task1 .grid div {
+    background-color: #607d8b;
+    counter-increment: count;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.task1 .grid div::after {
+    content: "Element " counter(count);
+    color: white;
+    font-size: 22px;
+}
+
+/**task 2 */
+.task2 .layout {
+    display: grid;
+    grid-template-areas: "head head head" "section section aside" "foot foot foot";
+    width: 800px;
+    height: 500px;
+    margin: auto;
+}
+.task2 header {
+    grid-area: head;
+    display: grid;
+    background-color:#03a9f4 ;
+    height: 40px;
+}
+.task2 header::after {
+    content: "header";
+    color: white;
+    padding: 10px;
+}
+.task2 section {
+    grid-area: section;
+    display: grid;
+    background-color:#ff5722 ;
+    height: 420px;
+}
+.task2 section::after {
+    content: "Content";
+    color: white;
+    padding: 10px;
+}
+.task2 aside {
+    grid-area: aside;
+    display: grid;
+    background-color:#607d8b ;
+    height: 420px;
+}
+.task2 aside::after {
+    content: "Aside";
+    color: white;
+    padding: 10px;
+}
+.task2 footer {
+    grid-area: foot;
+    display: grid;
+    background-color:#009688 ;
+    height: 40px;
+}
+.task2 footer::after{
+    content: "footer";
+    color: white;
+    padding: 10px;
+}
+
+/**task 3 */
+.task3 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    padding: 20px ;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows: 1fr auto ;
+    gap: 20px 20px;
+}
+.task3 .grid div {
+    background-color: #403f3f;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+/**task 4 */
+.task4 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    padding: 20px ;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px  ;
+    gap: 20px 20px;
+}
+.task4 .grid div {
+    background-color: #2196f3;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
+.task4 .eight {
+    grid-area : 1 / 1 / 2 / 4;
+}
+.task4 .two {
+    grid-area: 2 / 1 / 3 /3;
+}
+.task4 .three {
+    grid-area: 2 / 3/ 3 /3;
+}
+.task4 .five {
+    grid-area: 3 / 2/ 6 /4;
+}
+.task4 .one {
+    grid-area: 6 / 1/ 6 /4;
+}
+
+/**task 5 */
+.task5 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto auto ;
+    gap : 20px 20px ;
+    align-content: space-between;
+}
+.task5 .grid div {
+    background-color: #e91e63;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+/**task 6 */
+.task6 {
+    background-color: #eee;
+    margin: auto;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: auto auto auto auto ;
+    grid-template-rows: auto auto auto auto;
+    gap : 20px 20px ;  
+    height: 1000px;
+    width: 800px;
+}
+.task6 div {
+    background-color: white;
+    padding-left:9px ;
+    position: relative;
+}
+.task6 .one {
+    grid-area: 1/1/2/3;
+    background-color: white;
+}
+.task6 .two {
+    grid-area: 1/3/2/4;
+    background-color: white;
+}
+.task6 .three {
+    grid-area: 1/4/4/4;
+    background-color: black;
+    color: white;
+}
+.task6 .four {
+    grid-area: 2/1/4/2;
+    background-color: white;
+}
+.task6 .five {
+    grid-area: 2/2/3/4;
+    background-color: black;
+    color: white;
+}
+.task6 .six {
+    grid-area: 3/2/4/4;
+    background-color: white;
+}
+.task6 .eight {
+    background-color: black;
+    color: white;
+}
+.task6 div {
+    border-bottom: 2px solid red;
+}
+.p1 {
+    font-weight: 600;
+    font-size: 15px;
+}
+h6 {
+    color: gray;
+    margin: 5px;
+    margin-left: 0;
+}
+h5 {
+    margin: 5px;
+    padding-top: 5px;
+    margin-left: 0;
+}
+.p2 {
+    font-size: 13px;
+}
+.task6 div::after {
+    content: " '' ";
+    color: gray;
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    font-size: 40px;
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+}
