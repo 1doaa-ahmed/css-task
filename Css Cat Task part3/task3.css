@@ -1,0 +1,122 @@
+/**task 1 */
+@media print {
+    .assign-one {
+        font-size: 40px;
+    }
+}
+
+/**task 2 */
+@media (min-width:800px) and (max-width:1800px){
+    .task2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .task2 div {
+    background-color: #eee;
+    padding: 15px;
+    text-align: center;
+}
+    b {
+        color: rgb(59, 153, 153);
+    }
+    span {
+        color: black;
+    }
+}
+@media (min-width:400px) and (max-width:800px){
+    .task2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    }
+    .task2 div {
+    background-color: #eee;
+    padding: 15px;
+    text-align: center;
+}
+    .task2 b {
+        color: red;
+    }
+    .task2 span {
+        color: black;
+    }
+}
+
+@media (max-width:400px) and (min-width:100px){
+    .task2 {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .task2 div {
+    color: rgb(0, 0, 0);
+    background-color: #eee;
+    text-align: center;
+    padding: 10px;
+}
+}
+
+/**task 3 */
+@media (min-width:800px) and (max-width:1800px){
+    .task3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .one ,.four {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .task3 div {
+    background-color: #eee;
+    padding: 15px;
+    text-align: center;
+    display: grid;
+}
+    b {
+        color: rgb(59, 153, 153);
+    }
+    span {
+        color: black;
+    }
+}
+@media (min-width:400px) and (max-width:800px){
+    .task3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    }
+    .one {
+        grid-column: 1/4;
+    }
+    .task3 div {
+    display: grid;
+    background-color: #eee;
+    padding: 15px;
+    text-align: center;
+}
+    .task3 b {
+        color: red;
+    }
+    .task3 span {
+        color: black;
+    }
+}
+@media (max-width:400px) and (min-width:100px){
+    .task3 {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .task3 div {
+    color: rgb(0, 0, 0);
+    background-color: #eee;
+    text-align: center;
+    padding: 10px;
+}
+}

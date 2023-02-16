@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 800;
+}
+.task1 div.main.red{
+    color: red;
+}
+.task2 .child:nth-child(2) {
+    color: red;
+}
+.task3 .parent > div:only-of-type{
+    color: red;
+}
+.task4 > div[title]:not(.no-need){
+    color: red;
+}
+.task5 div:nth-child(2) div{
+    color: red;
+}
+.task6 div:not(.no-need) div:nth-last-of-type(2){
+    color: red;
+}
+.task7 div:first-child div:nth-last-child(2){
+    color: red;
+}
+.task8 :not(h3,:first-child,:last-child) {
+    color: red;
+}

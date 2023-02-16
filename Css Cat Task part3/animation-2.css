@@ -1,0 +1,129 @@
+.task4 {
+    height: 600px;
+    width: 500px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 300px 300px ;
+    grid-template-rows: auto;
+    gap: 15px;
+    position: relative;
+}
+.E , .l {
+    display: grid;
+    grid-template-columns: repeat(4 , 75px);
+    grid-template-rows: repeat(8 , 75px); 
+}
+.E div , .l div {
+    background-color: #323234;
+}
+.one {   
+    grid-column: span 4;
+}
+.two {
+    grid-row: span 6;
+}
+.three {
+    grid-area: 4 / 2 / 5 /5;
+}
+.four {
+    grid-area: 7 / 2 / 8 /5;
+}
+.first {
+    grid-row : 1 / 8;
+}
+.second {
+    grid-area: 7 / 2 / 8 / 5;
+}
+.task4::before {
+    content: "";
+    position: absolute;
+    background-color: #ff9800;
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    left: 220px;
+    top: -3px;
+    animation: for-e;
+    -webkit-animation: for-e;
+    animation-name: for-e;
+    animation-duration: 6s;
+}
+.task4::after {
+    content: "";
+    position: absolute;
+    background-color: #ff9800;
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    right: -120px;
+    bottom: 70px;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-name: for-l;
+    opacity: 0;
+    animation-timing-function: linear;
+}
+@keyframes for-e {
+    11% {
+        left: 220px;
+        top: -3px;
+    }
+    22%  {
+        left: 0px;
+        top: -3px;
+    }
+    33% {
+        left: 0px;
+        top:223px;
+    }
+    44% {
+        left: 220px;
+        top:223px;
+    }
+    55% {
+        left: 0px;
+        top:223px;
+    }
+    66% {
+        left: 0px;
+        top: 447px;
+    }
+    77% {
+        left: 220px;
+        top: 447px;
+    }
+    88% {
+        left: 0px;
+        top: 447px;
+    }
+    95%{
+        left: 0px;
+        top: -3px;
+    }
+    100% {
+        left: 220px;
+        top: -3px;
+    }
+}
+@keyframes for-l {
+    0%{
+        opacity: 1;
+        right: -120px;
+        bottom: 70px;
+    }
+    50% {
+        opacity: 1;
+        right: 105px;
+        bottom: 70px;
+    }
+    90% {
+        opacity: 1;
+        right: 105px;
+        bottom: 520px;
+    }
+    100%{
+        opacity: 0;
+        right: 105px;
+        bottom: 520px;
+    }
+}

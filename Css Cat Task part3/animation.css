@@ -1,0 +1,146 @@
+/* task 1 */
+.task1 div , .task2 div{
+    width: 50px;
+    height: 50px;
+    margin: 40px auto;
+    /*لتوسيطالعنصربالطول 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    */
+    background-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.task1 div {
+    border: 7px solid #e91e63;
+    border-left-color: transparent;
+}
+.task1 div::after , .task2 div::after{
+    content: " ";
+    position: absolute;
+    width: 80px;
+    height: 80px;   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    background-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;      
+}
+.task1 div::after{   
+    border: 7px solid #2196f3;
+    border-top-color: transparent;
+}
+.task1 div::before , .task2 div::before{
+    content: " ";
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    background-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.task1 div::before {
+    border:7px solid #ff9800;   
+    border-right-color: transparent;
+}
+.task1 div:hover {
+    animation-play-state: paused;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
+
+/* task 2 */
+.task2 div {
+    border: 7px solid #2196f3; 
+    border-top-color: transparent;
+    animation-name: none;
+}
+.task2 div::after {
+    border: 7px solid #ff9800;
+    border-bottom-color: transparent;
+}
+.task2 div::before {
+    border: 7px solid black;
+    border-right-color: transparent;
+}
+.task2 div:hover {
+    animation-name: spin;
+    animation-timing-function: linear;
+}
+
+/* task 3 */
+.task3 span {
+    height: 50px;
+    width: 50px;
+    margin: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    background-color: #eee;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 7px solid black;
+    border-left-color: transparent;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    animation-direction: reverse;
+}
+
